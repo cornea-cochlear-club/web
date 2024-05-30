@@ -24,6 +24,8 @@
     "@types/three": "^0.164.1",
     "astro": "^4.9.2",
     "astro-seo": "^0.8.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "typescript": "^5.4.5"
   },
   "devDependencies": {
