@@ -5,7 +5,7 @@ const Navigator = () => {
   const [openHamburger, setOpenhamburger] = useState(false)
 
   return (
-    <nav className="fixed z-50 top-0 flex flex-row justify-between h-16 w-full font-mono font-normal text-black">
+    <nav className="fixed z-50 top-0 flex flex-row justify-between h-16 w-full font-normal text-white">
       <div className="p-4 pl-6">
         <a href="/" className=" hover:no-underline">
           Cornea Cochlear Club
@@ -28,23 +28,23 @@ const Navigator = () => {
               <span className="">/blog</span>
             </a>
             <a
-              href="/about"
+              href="about"
               className=""
             >
-              <span className="">/about</span>
+              <span className="">about</span>
             </a>
             <p className=" w-36" onClick={() => setShowShowcase((prev) => !prev)}> /showcase </p>
             {
               showShowcase && (
                 <div className="flex flex-col ml-4">
                   <a href="/side-project" className="hover:no-underline">
-                    <p className="">/side_project</p>
+                    <p className="">side_project</p>
                   </a>
                   <a href="/art" className="hover:no-underline">
-                    <p className="">/art</p>
+                    <p className="">art</p>
                   </a>
                   <a href="/talks" className="hover:no-underline">
-                    <p className="">/talks</p>
+                    <p className="">talks</p>
                   </a>
                 </div>
                 
@@ -87,13 +87,13 @@ const Navigator = () => {
           href="/blog"
           className="hover:bg-dark-blue hover:no-underline flex flex-col align-middle cursor-pointer"
         >
-          <span className=" m-4">/blog</span>
+          <span className=" m-4">blog</span>
         </a>
         <a
           href="/about"
           className=" hover:bg-dark-blue hover:no-underline flex flex-col align-middle cursor-pointer"
         >
-          <span className=" m-4">/about</span>
+          <span className=" m-4">about</span>
         </a>
       </div>
     </nav>

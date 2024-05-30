@@ -20,8 +20,9 @@ export function Model(props) {
       dispose={null}
       ref={ref}
       onClick={props.handleClickCrt}
+      position={props.position}
     >
-      <primitive object={obj}  scale={0.2}/>
+      <primitive object={obj} scale={0.2} />
     </animated.group>
   )
 }

@@ -21,16 +21,24 @@ export default function Scene() {
     <>
       <group>
         <EffectComposer>
-          <Bloom luminanceThreshold={0} luminanceSmoothing={0.9} height={300} />
+          <Bloom
+            mipmapBlur
+            radius={0.7}
+            luminanceThreshold={0}
+            luminanceSmoothing={1.3}
+          />
+          <Noise opacity={0.04}/>
         </EffectComposer>
-        <ambientLight />
-        <pointLight position={[10, 10, 10]} />
+        <pointLight position={[0.5, 0.2, 0]} />
+        <ambientLight intensity={0.15} />
         <Model
           handleClickCrt={handleClickCrt}
           handlePointerEnterCrt={handlePointerEnterCrt}
           handlePointerLeaveCrt={handlePointerLeaveCrt}
+          position={[0.2, 0.2, 0]}
         />
       </group>
+      
     </>
   )
 }
