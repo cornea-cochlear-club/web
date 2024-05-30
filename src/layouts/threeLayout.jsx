@@ -3,6 +3,7 @@ import Scene from "../subpages/index/threejs/scene"
 import { Canvas } from "@react-three/fiber"
 import EventPopLogo from "../../public/eventpop.svg"
 import PinIcon from "../../public/pin.svg"
+import InstagramLogo from "../../public/instagram.svg"
 
 export const render = () =>
   createRoot(document.getElementById("root")).render(
@@ -32,20 +33,32 @@ export const render = () =>
               THE STREET FINDS ITS OWN USES FOR THINGS
             </p>
 
-            <p className="text-2xl font-mono text-[#00ff00]">[7 June 2024, 19:00 onward]</p>
+            <div className="flex flex-col justify-center items-center leading-tight mt-4 text-2xl">
+              <p className="font-mono"> 7 June 2024, 19:00 onward </p>
+              <div className="flex space-x-2 justify-center items-center mt-2">
+                <img src={PinIcon.src} className="w-[20px]" />
+                <a
+                  href="https://www.google.com/maps?sca_esv=9ef43ef143c24271&output=search&q=unformat+studio&source=lnms&entry=mc&ved=1t:200715&ictx=111"
+                  target="_blank"
+                >
+                  Unformat Studio BKK, Thailand
+                </a>
+              </div>
+            </div>
 
-            <ol className="grid grid-cols-3 gap-4 my-12 w-1/2 text-center font-mono mt-4 text-[#ff006a] leading-tight text-xl">
-              <li>kastakila (NYC)</li>
-              <li>Reckoner (NYC)</li>
-              <li>emptyflash (NYC)</li>
-              <li>Renick Bell (HCMC)</li>
-              <li>Le-Bac-Tan (HCMC)</li>
-              <li>inmintcondition (BKK)</li>
-              <li>Varut_O (BKK)</li>
-              <li>Palindroma (BKK, RU)</li>
-              <li>WrappedByte (BKK)</li>
-              <li>CRSRCRSR (BKK)</li>
-              <li>Karnpapon Boonput (BKK)</li>
+            <ol className="grid grid-cols-3 gap-4 my-12 w-full text-center font-mono mt-4 text-[#ff006a] leading-tight text-xl">
+              <a href="https://www.instagram.com/kastakila_" target="_blank" className="hover:text-white">kastakila (NYC)</a>
+              <a href="https://www.instagram.com/reckonermusic" target="_blank" className="hover:text-white">Reckoner (NYC)</a>
+              <a href="https://www.instagram.com/emptyflash_" target="_blank" className="hover:text-white">emptyflash (NYC)</a>
+              <a href="https://www.instagram.com/renickbell" target="_blank" className="hover:text-white">Renick Bell (HCMC)</a>
+              <a href="https://www.instagram.com/lebactan" target="_blank" className="hover:text-white">Le-Bac-Tan (HCMC)</a>
+              <a href="https://www.instagram.com/in.mintcondition_" target="_blank" className="hover:text-white">inmintcondition (BKK)</a>
+              <a href="https://www.instagram.com/varut_o" target="_blank" className="hover:text-white">Varut_O (BKK)</a>
+              <a href="https://www.instagram.com/roma_or_am_i" target="_blank" className="hover:text-white">Palindroma (BKK, RU)</a>
+              <a href="https://www.instagram.com/giang_ws" target="_blank" className="hover:text-white">WrappedByte (BKK)</a>
+              <a href="https://www.instagram.com/crsrcrsrrr" target="_blank" className="hover:text-white">CRSRCRSR (BKK)</a>
+              <a href="https://www.instagram.com/msyves" target="_blank" className="hover:text-white">Msyves (BKK)</a>
+              <a href="https://www.instagram.com/karnpapon" target="_blank" className="hover:text-white">Karnpapon Boonput (BKK)</a>
             </ol>
 
             <a
@@ -61,9 +74,14 @@ export const render = () =>
         </div>
 
         <div className="flex w-full justify-between px-4 mb-4">
-          <div className="flex space-x-4 justify-center items-center">
-            <img src={PinIcon.src} className="w-[20px]"/>
-            <a href="https://www.google.com/maps?sca_esv=9ef43ef143c24271&output=search&q=unformat+studio&source=lnms&entry=mc&ved=1t:200715&ictx=111" target="_blank">Unformat Studio, Lat Phrao, BKK, Thailand</a>
+          <div className="flex space-x-2 justify-center items-center">
+            <img src={InstagramLogo.src} className="w-[20px]" />
+            <a
+              href="https://www.instagram.com/corneacochlearclub/"
+              target="_blank"
+            >
+              Cornea Cochlear Club
+            </a>
           </div>
 
           <div className="flex space-x-12">
@@ -72,7 +90,6 @@ export const render = () =>
             <img src={EventPopLogo.src} className="w-[40px] mr-2" />
             <img src={EventPopLogo.src} className="w-[40px] mr-2" />
           </div>
-
         </div>
       </div>
     </>
