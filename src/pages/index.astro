@@ -7,7 +7,7 @@ import InstagramLogo from "../../public/instagram.svg"
 
 <Layout title="Cornea Cochlear Club" description="Event/Performance" preview="/images/pages/index.png">
   <div class="w-full h-full fixed z-0" id="root"></div>
-  <div class="absolute inset-0 flex flex-col h-[calc(100%_-_64px)] z-10" id="information">
+  <div class="relative inset-0 flex flex-col h-screen z-10 pt-16" id="information">
     <div class="flex flex-col relative w-full items-center flex-grow">
       <p class="flex text-white  font-display text-2xl">
         Cornea Cochlear Club
@@ -92,7 +92,7 @@ import InstagramLogo from "../../public/instagram.svg"
 
 <script>
   import { render } from "../layouts/threeLayout.jsx"
-  import "../../public/app.css"
+  import "/public/app.css"
 
   render()
 </script>
