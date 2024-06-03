@@ -21,20 +21,20 @@ const Navigator = () => {
           <>
           <div className="lg:hidden absolute top-0 right-0 p-2 py-4 w-10 h-10  z-10" onClick={() => setOpenhamburger(false)}> x </div>
           <div className="lg:hidden absolute w-full h-48 bg-dark-blue flex flex-col p-4">
-            <a
+            {/* <a
               href="/blog"
               className=""
             >
               <span className="">/blog</span>
-            </a>
-            <a
+            </a> */}
+            {/* <a
               href="about"
               className=""
             >
               <span className="">about</span>
-            </a>
-            <p className=" w-36" onClick={() => setShowShowcase((prev) => !prev)}> /showcase </p>
-            {
+            </a> */}
+            {/* <p className=" w-36" onClick={() => setShowShowcase((prev) => !prev)}> /showcase </p> */}
+            {/* {
               showShowcase && (
                 <div className="flex flex-col ml-4">
                   <a href="/side-project" className="hover:no-underline">
@@ -49,7 +49,7 @@ const Navigator = () => {
                 </div>
                 
               )
-            }
+            } */}
            
           </div>
           </>
@@ -83,18 +83,18 @@ const Navigator = () => {
             </div>
           )}
         </div> */}
-        <a
+        {/* <a
           href="/blog"
           className="hover:bg-dark-blue hover:no-underline flex flex-col align-middle cursor-pointer"
         >
           <span className=" m-4">blog</span>
-        </a>
-        <a
+        </a> */}
+        {/* <a
           href="/about"
           className=" hover:bg-dark-blue hover:no-underline flex flex-col align-middle cursor-pointer"
         >
           <span className=" m-4">about</span>
-        </a>
+        </a> */}
       </div>
     </nav>
   )

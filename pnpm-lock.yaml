@@ -20,6 +20,9 @@ importers:
       '@astrojs/vercel':
         specifier: ^7.6.0
         version: 7.6.0(astro@4.9.2(typescript@5.4.5))(react@18.3.1)
+      '@fontsource/jetbrains-mono':
+        specifier: ^5.0.20
+        version: 5.0.20
       '@headlessui/react':
         specifier: ^2.0.4
         version: 2.0.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -53,6 +56,9 @@ importers:
       astro-seo:
         specifier: ^0.8.3
         version: 0.8.3(prettier-plugin-astro@0.14.0)(prettier@3.2.5)(typescript@5.4.5)
+      postprocessing:
+        specifier: ^6.35.5
+        version: 6.35.5(three@0.164.1)
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -590,6 +596,9 @@ packages:
 
   '@floating-ui/utils@0.2.2':
     resolution: {integrity: sha512-J4yDIIthosAsRZ5CPYP/jQvUAQtlZTTD/4suA08/FEnlxqW3sKS9iAhgsa9VYLZ6vDHn/ixJgIqRQPotoBjxIw==}
+
+  '@fontsource/jetbrains-mono@5.0.20':
+    resolution: {integrity: sha512-QkrihYWqftzs+04TinulIhnFqNwO6990HR07iCUae/6daOZAMy7urUPzytrRT9M8KLTTHBeHOY0CKqOs1+o2OQ==}
 
   '@headlessui/react@2.0.4':
     resolution: {integrity: sha512-16d/rOLeYsFsmPlRmXGu8DCBzrWD0zV1Ccx3n73wN87yFu8Y9+X04zflv8EJEt9TAYRyLKOmQXUnOnqQl6NgpA==}
@@ -2308,11 +2317,11 @@ packages:
     resolution: {integrity: sha512-Wglpdk03BSfXkHoQa3b/oulrotAkwrlLDRSOb9D0bN86FdRyE9lppSp33aHNPgBa0JKCoB+drFLZkQoRRYae5A==}
     engines: {node: ^10 || ^12 || >=14}
 
-  postprocessing@6.35.4:
-    resolution: {integrity: sha512-U4Uk+wOHRbdlMV8zhn843K3bZyiWGKnWXWSsDXa8IW6NAiAP/YJtf6DHs4UFo1gLnNnRGpgJPc2Xxai9O/HoLg==}
+  postprocessing@6.35.5:
+    resolution: {integrity: sha512-nO8pxbiQT7+u3qv/q4LL1x6tstZWuduDlkOLFWQm3vFFKHzAsRMxqwsGAktkHKMSGXVEwTBvT3TKPklNALQheg==}
     engines: {node: '>= 0.13.2'}
     peerDependencies:
-      three: '>= 0.152.0 < 0.165.0'
+      three: '>= 0.152.0 < 0.166.0'
 
   potpack@1.0.2:
     resolution: {integrity: sha512-choctRBIV9EMT9WGAZHn3V7t0Z2pMQyl0EZE6pFc/6ml3ssw7Dlf/oAOvFwjm1HVsqfQN8GfeFyJ+d8tRzqueQ==}
@@ -3532,6 +3541,8 @@ snapshots:
 
   '@floating-ui/utils@0.2.2': {}
 
+  '@fontsource/jetbrains-mono@5.0.20': {}
+
   '@headlessui/react@2.0.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@floating-ui/react': 0.26.16(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -3853,8 +3864,8 @@ snapshots:
       '@react-three/fiber': 8.16.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.164.1)
       buffer: 6.0.3
       maath: 0.6.0(@types/three@0.164.1)(three@0.164.1)
-      n8ao: 1.8.2(postprocessing@6.35.4(three@0.164.1))(three@0.164.1)
-      postprocessing: 6.35.4(three@0.164.1)
+      n8ao: 1.8.2(postprocessing@6.35.5(three@0.164.1))(three@0.164.1)
+      postprocessing: 6.35.5(three@0.164.1)
       react: 18.3.1
       three: 0.164.1
       three-stdlib: 2.30.2(three@0.164.1)
@@ -5357,9 +5368,9 @@ snapshots:
       object-assign: 4.1.1
       thenify-all: 1.6.0
 
-  n8ao@1.8.2(postprocessing@6.35.4(three@0.164.1))(three@0.164.1):
+  n8ao@1.8.2(postprocessing@6.35.5(three@0.164.1))(three@0.164.1):
     dependencies:
-      postprocessing: 6.35.4(three@0.164.1)
+      postprocessing: 6.35.5(three@0.164.1)
       three: 0.164.1
 
   nanoid@3.3.7: {}
@@ -5532,7 +5543,7 @@ snapshots:
       picocolors: 1.0.1
       source-map-js: 1.2.0
 
-  postprocessing@6.35.4(three@0.164.1):
+  postprocessing@6.35.5(three@0.164.1):
     dependencies:
       three: 0.164.1
 
