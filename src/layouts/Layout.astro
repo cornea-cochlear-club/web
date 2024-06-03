@@ -1,6 +1,7 @@
 ---
 import { SEO } from "astro-seo"
 import Navigator from "../components/navigator.jsx"
+import Footer from "../components/footer.jsx"
 
 export interface Props {
   title?: string
@@ -37,6 +38,7 @@ const { title, preview, description } = Astro.props
     <main class="">
       <slot />
     </main>
+    <Footer client:load/>
     <style is:global>
       :root {
         --accent: 124, 58, 237;

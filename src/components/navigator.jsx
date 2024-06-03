@@ -7,9 +7,9 @@ const Navigator = () => {
   return (
     <nav className="fixed z-50 top-0 flex flex-row justify-between h-16 w-full font-normal text-white">
       <div className="p-4 pl-6">
-        {/* <a href="/" className=" hover:no-underline">
+        <a href="/" className=" hover:no-underline">
           Cornea Cochlear Club
-        </a> */}
+        </a>
       </div>
       <div className="lg:hidden">
         <div className="py-6 px-3 w-10 break-all leading-[6px]" onClick={() => setOpenhamburger(true)}>

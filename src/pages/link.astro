@@ -1,0 +1,35 @@
+---
+import Layout from "../layouts/Layout.astro"
+import EventPopLogo from "../../public/eventpop.svg"
+---
+
+<Layout
+  title="Cornea Cochlear Club"
+  description="Event/Performance"
+  preview="/images/pages/index.png"
+>
+  <div class="flex flex-col p-16">
+    <a
+      type="button"
+      href="https://www.eventpop.me/e/36130/cybernaut-party"
+      target="_blank"
+      class="text-gray-900 bg-[#00ff00] hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg p-2 pr-3 text-center text-xl inline-flex items-center me-2 mb-2"
+    >
+      <img src={EventPopLogo.src} class="w-[30px] mr-2" />
+      Get Ticket 🎫 Cybernaut Party: The Street find its own use for things
+    </a>
+    <a
+      type="button"
+      href="https://www.eventpop.me/e/37352"
+      target="_blank"
+      class="text-gray-900 bg-[#00ff00] hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg p-2 pr-3 text-center text-xl inline-flex items-center me-2 mb-2"
+    >
+      <img src={EventPopLogo.src} class="w-[30px] mr-2" />
+      Get Ticket 🎫 Live-coding Audio/Visual Talks and workshops
+    </a>
+  </div>
+</Layout>
+
+<script>
+  import "../../public/app.css"
+</script>
