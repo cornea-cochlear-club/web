@@ -1,7 +1,10 @@
 import React, { useState } from "react"
 import EventPopLogo from "../../public/eventpop.svg"
-import PinIcon from "../../public/pin.svg"
 import InstagramLogo from "../../public/instagram.svg"
+import Pwin from "../../public/sponsors/pwin.png"
+import SquareDot from "../../public/sponsors/SquareDots-Logo-Final_White-1.svg"
+import Synap from "../../public/sponsors/synap-logo-1.svg"
+import Unformat from "../../public/sponsors/unformat-logo-transparent-1.svg"
 
 const Footer = () => {
   return (
@@ -18,9 +21,10 @@ const Footer = () => {
 
       <div class="flex space-x-12">
         {/* sponsor logos */}
-        <img src={EventPopLogo.src} class="w-[40px] mr-2" />
-        <img src={EventPopLogo.src} class="w-[40px] mr-2" />
-        <img src={EventPopLogo.src} class="w-[40px] mr-2" />
+        <img src={Synap.src} class="w-[45px] mr-2" />
+        <img src={Unformat.src} class="w-[60px] mr-2" />
+        <img src={SquareDot.src} class="w-[45px] mr-2" />
+        <img src={Pwin.src} class="w-[40px] mr-2" />
       </div>
     </div>
   )
