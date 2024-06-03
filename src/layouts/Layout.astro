@@ -24,7 +24,8 @@ const { title, preview, description } = Astro.props
       openGraph={{
         basic: {
           title: title || "",
-          image: preview || "",
+          // image: preview || "",
+          image: "/ccc-og.png",
           type: "website",
         },
       }}
@@ -32,7 +33,7 @@ const { title, preview, description } = Astro.props
     <title>{title}</title>
   </head>
   <body>
-    <Navigator client:load />
+    <!-- <Navigator client:load /> -->
     <main class="mt-16">
       <slot />
     </main>
