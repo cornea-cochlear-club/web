@@ -2,6 +2,7 @@
 import { SEO } from "astro-seo"
 import Navigator from "../components/navigator.jsx"
 import Footer from "../components/footer.jsx"
+import "@fontsource/jetbrains-mono"
 
 export interface Props {
   title?: string
@@ -52,6 +53,7 @@ const { title, preview, description } = Astro.props
       html {
         background-color: rgb(0, 0, 0);
         color: rgb(255, 255, 255);
+        font-family: "Jetbrains Mono ", monospace;
       }
     </style>
   </body>
